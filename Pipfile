@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+datasets = "==2.21.0"
+transformers = "==4.44.2"
+torch = "==2.4.1"
+torchvision = "==0.19.1"
+torchaudio = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.12"
+python_full_version = "3.12.4"
