@@ -2,7 +2,7 @@
 
 This project aims to evaluate MIAs through [Privacy Meter](https://github.com/privacytrustlab/ml_privacy_meter) tool.
 
-This experiment is divided into two files.
+The experiment is divided into two files.
 1. setup.py: provide all the necessary configurations. 
 2. membership-inference_locations.ipynb: provide all the analysis for MIA.
 
@@ -20,12 +20,13 @@ Before runing the script, make sure to update the github_username field in the m
 github_user = "YOUR_USERNAME"
 ```
 
+The script automatically removes all CUDA-related dependencies from requirements.txt.
+If your machine does support CUDA, simply comment out or disable the remove_cuda_packages() function call to keep GPU support enabled.
+
 ```
 uv run setup.py
 ```
 
-The script automatically removes all CUDA-related dependencies from requirements.txt.
-If your machine does support CUDA, simply comment out or disable the remove_cuda_packages() function call to keep GPU support enabled.
 
 ### MIA exepriment
 After completing all configurations, execute the notebook membership-inference_locations.ipynb cells to run the experiments. Review and analyze the output of each cell to understand the results.
