@@ -94,7 +94,7 @@ def clone_and_setup_repo(user_name: str, repo_name: str = "ml_privacy_meter"):
 
     # Install using uv
     try:
-        subprocess.run(["uv", "pip", "install", "-r", "requirements.txt"], check=True)
+        subprocess.run(["uv", "pip", "install", "-r", "requirements.txt", "--index-strategy", "unsafe-best-match"], check=True)
     except subprocess.CalledProcessError as e:
         print("uv pip install failed.")
         print(e)

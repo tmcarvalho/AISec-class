@@ -12,6 +12,11 @@ Environment steup with UV
 uv venv --python 3.12 .venv
 ```
 
+Activate the environment
+```
+source .venv/bin/activate
+```
+
 ### Configs
 First, fork the Privacy Meter from GitHub page to your own account. This ensures you can modify and customize the code as needed. Then, run the setup.py script that clone your forked repo, clean and install all required dependencias and create the config file for the data. Change configs according the data and model you want to test. For this experiment, tabular Locations (Bangkok) dataset is used.
 
